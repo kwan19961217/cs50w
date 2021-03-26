@@ -1,0 +1,53 @@
+a {
+	font-size: 13px;
+	color: black;
+}
+
+.logo {
+  position: relative;
+  text-align: center;
+  width: 35%;
+  height: auto;
+  margin: 30px auto 30px auto;
+
+  img {
+	  width: 60%;
+	  height: auto;
+  }
+
+  .bottom-right {
+	  position: absolute;
+	  bottom: 3px;
+	  right: 94px;
+	  color: #4c8bf5;
+  }
+}
+
+.form {
+	width: 45%;
+	margin: auto;
+
+	.searchbar {
+		border-radius: 25px;
+		border-color: #dddddd;
+		border-style: solid;
+		border-width: 1px;
+		height: 40px;
+		width: 100%;
+		margin: 20px auto 20px auto;
+	}
+
+	.submit_button {
+		display: flex;
+		justify-content: center;
+
+		input {
+			margin: 10px;
+			padding: 6px 15px 6px 15px;
+			border-style: none;
+			border-radius: 3px;
+			background-color: #fafafa;
+			font-size: 14px;
+		}
+	}
+}

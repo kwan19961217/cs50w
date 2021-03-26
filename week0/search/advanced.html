@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="advanced_styles.css">
+    </head>
+    <body>
+    	<div class="nav justify-content-between bg-light">
+	    	<a class="navbar-brand" href="#">
+			   <img src="src/googlelogo.png" alt="Google Logo">
+			</a>
+			<ul class="nav">
+			  <li class="nav-item justfiy-content-end">
+			    <a class="nav-link" href="index.html">Google Search</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="image.html">Image</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link active" href="#">Advanced</a>
+			  </li>
+			</ul>
+		</div>
+		<div class="title">
+			<h5>Advanced Search</h5>
+		</div>
+		<hr>
+		<div class="form">
+			<form action="https://google.com/search">
+			  <div class="form-group row">
+			    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Find pages with...</label>
+			    <div class="col-sm-6">
+			      &nbsp;
+			    </div>
+			    <p class="col-sm-4 end_text">To do this in the search box.</p>
+			  </div>				
+			  <div class="form-group row">
+			    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">all these words:</label>
+			    <div class="col-sm-6">
+			      <input type="text" class="form-control form-control-sm" id="colFormLabelSm" name="as_q">
+			    </div>
+			    <p class="col-sm-4 end_text">Type the important words: tri-colour rat terrier</p>
+			  </div>
+			  <div class="form-group row">
+			    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">this exact word or phrase:</label>
+			    <div class="col-sm-6">
+			      <input type="text" class="form-control form-control-sm" id="colFormLabelSm" name="as_epq">
+			    </div>
+			    <p class="col-sm-4 end_text">Put exact words in quotes: "rat terrier"</p>
+			  </div>
+			  <div class="form-group row">
+			    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">any of these words:</label>
+			    <div class="col-sm-6">
+			      <input type="text" class="form-control form-control-sm" id="colFormLabelSm" name="as_oq">
+			    </div>
+			    <p class="col-sm-4 end_text">any of these words: Type OR between all the words you want: miniature OR standard</p>
+			  </div>
+			  <div class="form-group row">
+			    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">none of these words:</label>
+			    <div class="col-sm-6">
+			      <input type="text" class="form-control form-control-sm" id="colFormLabelSm" name="as_eq">
+			    </div>
+			    <p class="col-sm-4 end_text">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</p>
+			  </div>			 
+			  <div class="form-group row">
+			    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">numbers ranging from:</label>
+			    <div class="col-sm-6 to-form">
+			     <input class="form-control number-form" type="text"> 
+				 <label class="to">to</label>
+			     <input class="form-control number-form" type="text">
+			    </div>
+			    <p class="col-sm-4 end_text">Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</p>
+			  </div>
+			  <div class="second_hr"><hr></div>
+			  <div class="form-group row">
+			    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Then narrow your results by...</label>
+			    <div class="col-sm-10">
+			      &nbsp;
+			    </div>
+			  </div>				
+			  <div class="form-group row">
+			    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">language:</label>
+			    <div class="col-sm-6">
+			      <input class="form-control form-control-sm" id="colFormLabelSm" placeholder="any language" list="language">
+			      <datalist id="language">
+			      	<option selected="selected" value="any language">
+			      	  <option value="Afrikaans">Afrikaans</option>
+					  <option value="Albanian">Albanian</option>
+					  <option value="Arabic">Arabic</option>
+					  <option value="Armenian">Armenian</option>
+					  <option value="Basque">Basque</option>
+					  <option value="Bengali">Bengali</option>
+					  <option value="Bulgarian">Bulgarian</option>
+					  <option value="Catalan">Catalan</option>
+					  <option value="Cambodian">Cambodian</option>
+					  <option value="Chinese (Mandarin)">Chinese (Mandarin)</option>
+					  <option value="Croatian">Croatian</option>
+					  <option value="Czech">Czech</option>
+					  <option value="Danish">Danish</option>
+					  <option value="Dutch">Dutch</option>
+					  <option value="English">English</option>
+					  <option value="Estonian">Estonian</option>
+					  <option value="Fiji">Fiji</option>
+					  <option value="Finnish">Finnish</option>
+					  <option value="French">French</option>
+					  <option value="Georgian">Georgian</option>
+					  <option value="German">German</option>
+					  <option value="Greek">Greek</option>
+					  <option value="Gujarati">Gujarati</option>
+					  <option value="Hebrew">Hebrew</option>
+					  <option value="Hindi">Hindi</option>
+					  <option value="Hungarian">Hungarian</option>
+					  <option value="Icelandic">Icelandic</option>
+					  <option value="Indonesian">Indonesian</option>
+					  <option value="Irish">Irish</option>
+					  <option value="Italian">Italian</option>
+					  <option value="Japanese">Japanese</option>
+					  <option value="Javanese">Javanese</option>
+					  <option value="Korean">Korean</option>
+					  <option value="Latin">Latin</option>
+					  <option value="Latvian">Latvian</option>
+					  <option value="Lithuanian">Lithuanian</option>
+					  <option value="Macedonian">Macedonian</option>
+					  <option value="Malay">Malay</option>
+					  <option value="Malayalam">Malayalam</option>
+					  <option value="Maltese">Maltese</option>
+					  <option value="Maori">Maori</option>
+					  <option value="Marathi">Marathi</option>
+					  <option value="Mongolian">Mongolian</option>
+					  <option value="Nepali">Nepali</option>
+					  <option value="Norwegian">Norwegian</option>
+					  <option value="Persian">Persian</option>
+					  <option value="Polish">Polish</option>
+					  <option value="Portuguese">Portuguese</option>
+					  <option value="Punjabi">Punjabi</option>
+					  <option value="Quechua">Quechua</option>
+					  <option value="Romanian">Romanian</option>
+					  <option value="Russian">Russian</option>
+					  <option value="Samoan">Samoan</option>
+					  <option value="Serbian">Serbian</option>
+					  <option value="Slovak">Slovak</option>
+					  <option value="Slovenian">Slovenian</option>
+					  <option value="Spanish">Spanish</option>
+					  <option value="Swahili">Swahili</option>
+					  <option value="Swedish ">Swedish </option>
+					  <option value="Tamil">Tamil</option>
+					  <option value="Tatar">Tatar</option>
+					  <option value="Telugu">Telugu</option>
+					  <option value="Thai">Thai</option>
+					  <option value="Tibetan">Tibetan</option>
+					  <option value="Tonga">Tonga</option>
+					  <option value="Turkish">Turkish</option>
+					  <option value="Ukrainian">Ukrainian</option>
+					  <option value="Urdu">Urdu</option>
+					  <option value="Uzbek">Uzbek</option>
+					  <option value="Vietnamese">Vietnamese</option>
+					  <option value="Welsh">Welsh</option>
+					  <option value="Xhosa">Xhosa</option>
+			    </div>
+			    <p class="col-sm-4 end_text">Find pages in the language that you select.</p>
+			  </div>
+			  <div class="form-group row">
+			    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">region:</label>
+			    <div class="col-sm-6">
+			      <input class="form-control form-control-sm" id="colFormLabelSm" list="region" placeholder="any region">
+			      <datalist id="region">
+			      	<option selected="selected" value="any region">
+			      	<option value="Afghanistan">
+					<option value="Albania">
+					<option value="Algeria">
+					<option value="Andorra">
+					<option value="Angola">
+					<option value="Antigua and Barbuda">
+					<option value="Argentina">
+					<option value="Armenia">
+					<option value="Australia">
+					<option value="Austria">
+					<option value="Azerbaijan">
+					<option value="Bahamas">
+					<option value="Bahrain">
+					<option value="Bangladesh">
+					<option value="Barbados">
+					<option value="Belarus">
+					<option value="Belgium">
+					<option value="Belize">
+					<option value="Benin">
+					<option value="Bhutan">
+					<option value="Bolivia">
+					<option value="Bosnia and Herzegovina">
+					<option value="Botswana">
+					<option value="Brazil">
+					<option value="Brunei">
+					<option value="Bulgaria">
+					<option value="Burkina Faso">
+					<option value="Burundi">
+					<option value="Côte d'Ivoire">
+					<option value="Cabo Verde">
+					<option value="Cambodia">
+					<option value="Cameroon">
+					<option value="Canada">
+					<option value="Central African Republic">
+					<option value="Chad">
+					<option value="Chile">
+					<option value="China">
+					<option value="Colombia">
+					<option value="Comoros">
+					<option value="Congo (Congo-Brazzaville)">
+					<option value="Costa Rica">
+					<option value="Croatia">
+					<option value="Cuba">
+					<option value="Cyprus">
+					<option value="Czechia (Czech Republic)">
+					<option value="Democratic Republic of the Congo">
+					<option value="Denmark">
+					<option value="Djibouti">
+					<option value="Dominica">
+					<option value="Dominican Republic">
+					<option value="Ecuador">
+					<option value="Egypt">
+					<option value="El Salvador">
+					<option value="Equatorial Guinea">
+					<option value="Eritrea">
+					<option value="Estonia">
+					<option value="Eswatini">
+					<option value="Ethiopia">
+					<option value="Fiji">
+					<option value="Finland">
+					<option value="France">
+					<option value="Gabon">
+					<option value="Gambia">
+					<option value="Georgia">
+					<option value="Germany">
+					<option value="Ghana">
+					<option value="Greece">
+					<option value="Grenada">
+					<option value="Guatemala">
+					<option value="Guinea">
+					<option value="Guinea-Bissau">
+					<option value="Guyana">
+					<option value="Haiti">
+					<option value="Holy See">
+					<option value="Honduras">
+					<option value="Hungary">
+					<option value="Iceland">
+					<option value="India">
+					<option value="Indonesia">
+					<option value="Iran">
+					<option value="Iraq">
+					<option value="Ireland">
+					<option value="Israel">
+					<option value="Italy">
+					<option value="Jamaica">
+					<option value="Japan">
+					<option value="Jordan">
+					<option value="Kazakhstan">
+					<option value="Kenya">
+					<option value="Kiribati">
+					<option value="Kuwait">
+					<option value="Kyrgyzstan">
+					<option value="Laos">
+					<option value="Latvia">
+					<option value="Lebanon">
+					<option value="Lesotho">
+					<option value="Liberia">
+					<option value="Libya">
+					<option value="Liechtenstein">
+					<option value="Lithuania">
+					<option value="Luxembourg">
+					<option value="Madagascar">
+					<option value="Malawi">
+					<option value="Malaysia">
+					<option value="Maldives">
+					<option value="Mali">
+					<option value="Malta">
+					<option value="Marshall Islands">
+					<option value="Mauritania">
+					<option value="Mauritius">
+					<option value="Mexico">
+					<option value="Micronesia">
+					<option value="Moldova">
+					<option value="Monaco">
+					<option value="Mongolia">
+					<option value="Montenegro">
+					<option value="Morocco">
+					<option value="Mozambique">
+					<option value="Myanmar">
+					<option value="Namibia">
+					<option value="Nauru">
+					<option value="Nepal">
+					<option value="Netherlands">
+					<option value="New Zealand">
+					<option value="Nicaragua">
+					<option value="Niger">
+					<option value="Nigeria">
+					<option value="North Korea">
+					<option value="North Macedonia">
+					<option value="Norway">
+					<option value="Oman">
+					<option value="Pakistan">
+					<option value="Palau">
+					<option value="Palestine State">
+					<option value="Panama">
+					<option value="Papua New Guinea">
+					<option value="Paraguay">
+					<option value="Peru">
+					<option value="Philippines">
+					<option value="Poland">
+					<option value="Portugal">
+					<option value="Qatar">
+					<option value="Romania">
+					<option value="Russia">
+					<option value="Rwanda">
+					<option value="Saint Kitts and Nevis">
+					<option value="Saint Lucia">
+					<option value="Saint Vincent and the Grenadines">
+					<option value="Samoa">
+					<option value="San Marino">
+					<option value="Sao Tome and Principe">
+					<option value="Saudi Arabia">
+					<option value="Senegal">
+					<option value="Serbia">
+					<option value="Seychelles">
+					<option value="Sierra Leone">
+					<option value="Singapore">
+					<option value="Slovakia">
+					<option value="Slovenia">
+					<option value="Solomon Islands">
+					<option value="Somalia">
+					<option value="South Africa">
+					<option value="South Korea">
+					<option value="South Sudan">
+					<option value="Spain">
+					<option value="Sri Lanka">
+					<option value="Sudan">
+					<option value="Suriname">
+					<option value="Sweden">
+					<option value="Switzerland">
+					<option value="Syria">
+					<option value="Tajikistan">
+					<option value="Tanzania">
+					<option value="Thailand">
+					<option value="Timor-Leste">
+					<option value="Togo">
+					<option value="Tonga">
+					<option value="Trinidad and Tobago">
+					<option value="Tunisia">
+					<option value="Turkey">
+					<option value="Turkmenistan">
+					<option value="Tuvalu">
+					<option value="Uganda">
+					<option value="Ukraine">
+					<option value="United Arab Emirates">
+					<option value="United Kingdom">
+					<option value="United States of America">
+					<option value="Uruguay">
+					<option value="Uzbekistan">
+					<option value="Vanuatu">
+					<option value="Venezuela">
+					<option value="Vietnam">
+					<option value="Yemen">
+					<option value="Zambia">
+					<option value="Zimbabwe">
+			    </div>
+			    <p class="col-sm-4 end_text">Find pages published in a particular region.</p>
+			  </div>
+			  <div class="form-group row">
+			    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">last update:</label>
+			    <div class="col-sm-6">
+			      <input class="form-control form-control-sm" id="colFormLabelSm" list="update_time" placeholder="anytime">
+			      <datalist id="update_time">
+			      	<option selected="selected" value="anytime">
+			      	<option value="past 24 hours">
+			      	<option value="past week">
+			      	<option value="past month">
+			      	<option value="past year">
+			    </div>
+			    <p class="col-sm-4 end_text">Find pages updated within the time that you specify.</p>
+			  </div>
+			  <div class="form-group row">
+			    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">site or domain:</label>
+			    <div class="col-sm-6">
+			      <input type="url" class="form-control form-control-sm" id="colFormLabelSm">
+			    </div>
+			    <p class="col-sm-4 end_text">Search one site (like wikipedia.org ) or limit your results to a domain like .edu, .org or .gov</p>
+			  </div>			 	
+			  <div class="form-group row">
+			    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">terms appearing:</label>
+			    <div class="col-sm-6">
+			      <input class="form-control form-control-sm" id="colFormLabelSm" list="terms" placeholder="anywhere in the page">
+			      <datalist id="terms">
+			      	<option selected="selected" value="anywhere in the page">
+			      	<option value="in the title of the page">
+			      	<option value="in the text of the page">
+			      	<option value="in the URL of the page">
+			      	<option value="in links to the page">
+			    </div>
+			    <p class="col-sm-4 end_text">Search for terms in the whole page, page title or web address, or links to the page you're looking for.</p>
+			  </div>	
+			  <div class="form-group row">
+			    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm"><a href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en&visit_id=637516559682829403-968192551&rd=1">SafeSearch</a>:</label>
+			    <div class="col-sm-6">
+			      <input class="form-control form-control-sm" id="colFormLabelSm" list="safesearch" placeholder="Show explicit results">
+			      <datalist id="safesearch">
+			      	<option selected="selected" value="Show explicit results">
+			      	<option value="Hide explicit results">
+			    </div>
+			    <p class="col-sm-4 end_text">Tell <a href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en&visit_id=637516559682829403-968192551&rd=1">SafeSearch</a> whether to filter sexually explicit content.</p>
+			  </div>	
+			  <div class="form-group row">
+			    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">file type:</label>
+			    <div class="col-sm-6">
+			      <input class="form-control form-control-sm" id="colFormLabelSm" list="file_type" placeholder="any format">
+			      <datalist id="file_type">
+			      	<option selected="selected" value="any format">
+			      	<option value="Adobe Acrobat PDF (.pdf)">
+			      	<option value="Adobe Postscript (.ps)">
+			      	<option value="Autodesk DWF (.dwf)">
+			      	<option value="Google Earth KML (.kml)">
+			      	<option value="Google Earth KMZ (.kmz)">
+			      	<option value="Microsoft Excel (.xls)">
+			      	<option value="Microsoft PowerPoint (.ppt)">
+			      	<option value="Microsoft Word (.doc)">
+			      	<option value="Rich Text Format (.rtf)">
+			      	<option value="Shockwave Flash (.swd)">
+			    </div>
+			    <p class="col-sm-4 end_text">Find pages in the format that you prefer.</p>
+			  </div>
+			  <div class="form-group row">
+			    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm"><a href="https://support.google.com/websearch/answer/29508?p=ws_images_usagerights&hl=en&visit_id=637516559682829403-968192551&rd=1">usage rights</a>:</label>
+			    <div class="col-sm-6">
+			      <input class="form-control form-control-sm" id="colFormLabelSm" list="usage" placeholder="not filtered by licence">
+			      <datalist id="usage">
+			      	<option selected="selected" value="not filtered by license">
+			      	<option value="free to use or share">
+			      	<option value="free to use or share, even commercially">
+			      	<option value="free to use share or modify">
+			      	<option value="free to use, share or modify, even commercially">
+			    </div>
+			    <p class="col-sm-4 end_text">Find pages that you are free to use yourself.</p>
+			  </div>
+			  <div class="form-group row">
+			  	<div class="col-sm-6">
+			      &nbsp;
+			    </div>
+			    <div class="col-sm-1">
+			  		<input class="btn btn-primary btn-sm" type="submit" value="Advanced Search">	
+			  	</div>
+			  </div>
+	        </form>
+	        <div class="second_hr"><hr></div>
+    	</div>
+    	<div class="other_option">
+    		<p>You can also...</p>
+    		<div>
+	    		<a href="https://support.google.com/websearch/answer/2466433?visit_id=637516559682829403-968192551&p=adv_pages_similar&hl=en&rd=1">Find pages that are similar to a URL</a><br>
+	    		<a href="https://support.google.com/websearch/answer/54068?p=adv_pages_visited&hl=en&visit_id=637516559682829403-968192551&rd=1">Search pages that you've visited</a><br>
+	    		<a href="https://support.google.com/websearch/answer/2466433?visit_id=637516559682829403-968192551&p=adv_operators&hl=en&rd=1">Use operators in the search box</a><br>
+	    		<a href="https://www.google.com/preferences?hl=en-HK">Customise your search settings</a>
+    		</div>
+    	</div>
+    </body>
+</html>
+

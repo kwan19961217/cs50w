@@ -1,0 +1,84 @@
+.nav {
+	flex-wrap: nowrap;
+	height: 60px;
+
+	.nav-link {
+		font-size: 13px;
+		color: black;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+  padding: 12px;
+  min-width: 20%;
+  height: auto;
+  width: 20%;
+  min-height: auto;
+  min-width: 110px
+}
+
+li {
+	padding: 12px;
+}
+
+.title {
+	margin: 22px 45px 22px 45px;
+	color: #de5246;
+}
+
+.form {
+	margin-top: 40px;
+	margin-left: 28px;
+	margin-right: 28px;
+
+	.row {
+		margin: 5px;
+
+		.to-form {
+			display: flex;
+			justify-content: space-between;
+
+			.number-form {
+				width: 45%;
+				height: 60%;
+			}
+
+			.to {
+				margin-left: 12.5px;
+				margin-right: 12.5px;
+			}
+		}
+
+		.end_text {
+			font-size: 8px;
+		}
+
+		.btn {
+			margin-top: 15px;
+			margin-left: 48px;
+			margin-bottom: 15px;
+		}
+	}
+
+}
+
+.second_hr {
+	margin-left: 22px;
+	margin-right: 22px;
+}
+
+.other_option {
+	margin-top: 15px;
+	margin-left: 50px;
+	margin-bottom: 15px;
+
+	a {
+		font-size: 11px;
+		margin: 0px;
+		padding: 0px;
+	}
+}
