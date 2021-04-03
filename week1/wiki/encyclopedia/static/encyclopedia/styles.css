@@ -36,3 +36,18 @@ textarea {
 .sidebar h2 {
     margin-top: 5px;
 }
+
+.create_form, .edit_form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.create, .edit{
+    width: 100%;
+    margin: 10px;
+}
+
+textarea.create, textarea.edit{
+    height: 50vh
+}
